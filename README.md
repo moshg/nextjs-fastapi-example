@@ -11,3 +11,4 @@ Frontend:
 Backend:
 
 - [FastAPI](https://fastapi.tiangolo.com/)
+- [Rye](https://rye.astral.sh/)

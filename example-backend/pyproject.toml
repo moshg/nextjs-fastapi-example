@@ -1,0 +1,24 @@
+[project]
+name = "example-backend"
+version = "0.1.0"
+description = "Backend for Next.js and FastAPI example"
+dependencies = ["fastapi>=0.111.1", "uvicorn>=0.30.3"]
+readme = "../README.md"
+requires-python = ">= 3.12"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.rye.scripts]
+dev = "uvicorn src.example_backend.main:app --reload"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/example_backend"]

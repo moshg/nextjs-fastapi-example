@@ -1,4 +1,4 @@
-# Next.js and FastAPI Example
+# React, Tanstack and FastAPI Example
 
 Technologies used:
 
